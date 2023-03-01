@@ -1,5 +1,7 @@
 package com.example.pintslappers.android.ui
 
+import androidx.compose.material3.ColorScheme
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 // DarkColorPalette
@@ -30,3 +32,12 @@ val LightInvertedFrost = Color(0xFFFFFFFF) // Background color for inverted surf
 val LightInvertedMustard = Color(0xFF000000) // Background color for inverted yellow surfaces
 val LightPearl = Color(0xFF7E7E7E) // Text color for secondary text on surfaces
 val LightTertiaryContent = Color(0xFFFFFFFF) // Text color for tertiary content in a container
+
+
+val ColorScheme.primaryButtonColor
+    @Composable
+    get() = LightJet
+
+val ColorScheme.secondaryButtonColor
+    @Composable
+    get() = LightBlizzard

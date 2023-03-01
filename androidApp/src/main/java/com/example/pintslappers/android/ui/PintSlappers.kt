@@ -41,7 +41,7 @@ private val LightColorPalette = darkColorScheme(
 )
 
 @Composable
-fun MyApplicationTheme(
+fun PintSlappersTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {

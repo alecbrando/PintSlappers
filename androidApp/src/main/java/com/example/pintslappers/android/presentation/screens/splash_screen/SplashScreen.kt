@@ -11,14 +11,11 @@ import com.example.pintslappers.android.presentation.screens.splash_screen.compo
 
 @Composable
 fun SplashScreen(navController: NavController) {
+
     Box(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)){
         BeerAnimation(){
             //Todo: Navigate to welcome or home
-            navController.navigate("welcome"){
-                popUpTo("splash"){
-                    inclusive = true
-                }
-            }
+            navController.navigate("welcome")
         }
     }
 }

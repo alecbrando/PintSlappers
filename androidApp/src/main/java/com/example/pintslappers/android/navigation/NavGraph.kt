@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.pintslappers.android.presentation.screens.signup_screen.SignUpScreen
 import com.example.pintslappers.android.presentation.screens.splash_screen.SplashScreen
 import com.example.pintslappers.android.presentation.screens.welcome_screen.WelcomeScreen
 
@@ -15,6 +16,9 @@ fun SetUpNavGraph(navController: NavHostController) {
         }
         composable(route = Screen.Welcome.route) {
             WelcomeScreen(navController = navController)
+        }
+        composable(route = Screen.SignUp.route) {
+            SignUpScreen(navController = navController)
         }
     }
 }
