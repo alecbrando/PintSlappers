@@ -36,7 +36,8 @@ internal class FormFieldImpl<T : Any, V : Any>(
         // Null and empty strings are skipped for validation
         if (input != null && input != "") {
             resultStream.value = validate(input)
-        } else {
+        }
+        else {
             resultStream.value = if (isFieldOptional()) {
                 FieldResult.Success
             } else {

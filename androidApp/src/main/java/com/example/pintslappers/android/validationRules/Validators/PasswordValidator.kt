@@ -1,4 +1,4 @@
-package com.example.pintslappers.android.composeFormValidation.validationRules
+package com.example.pintslappers.android.validationRules.Validators
 
 import com.example.pintslappers.android.composeFormValidation.annotations.FieldValidation
 import com.example.pintslappers.android.composeFormValidation.PasswordValidatorRule
